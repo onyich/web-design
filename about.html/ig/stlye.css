@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+}
+
+main{
+    display: flex;
+}
+
+.container{
+    text-align: center;
+    padding: 30px;
+}
+.title{
+    padding: 30px 0;
+    font-family: 'Pacifico';
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.page{
+    width: 350px;
+    border: 1px solid #b6b6b6;
+    padding-bottom: 15px;
+}
+
+form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+form input{
+    margin-bottom: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    outline: none;
+}
+form input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background: #efefef;
+}
+input [type="text"]
+input[type=password]{
+    padding-left: 10px;
+    position: relative;
+    height: 35px;
+    font-size: 15px;
+}
+
+input::placeholder{
+font-weight: normal;
+font-size: 13px;
+transition: 0.3s ease;
+}
+input::focus::placeholder{
+    position: relative;
+    font-size: 10px;
+    transform: translate(-13px);
+}
+form button{
+    border: none;
+    background-color: #008aff;
+    padding: 9px 0;
+    margin-top: 5px;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+form .option{
+    color: #5a5a5a;
+    margin: 10px 0;
+    font-weight: bold;
+    position: relative;
+}
+form .option::before{
+position: absolute;
+content: '';
+width: 37%;
+height: 2px;
+background: #b6b6b6;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+form .option::before{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+form .option::after{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fblink {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.fblink span{
+    font-size: 18px;
+    color: #375189;
+    margin-right: 5px;
+}
+
+.fblink a{
+    text-decoration: none;
+    color: #0e1859;
+}
+.forget-id a{
+    text-decoration: none;
+    color: #0e1859;
+    font-size: 12px;
+}
+
+.forget-id{
+     margin-top: 15px;
+}
+
+.signup{
+    border: 1px solid #b6b6b6;
+    width: 307px;
+    padding: 21.5px;
+}
+
+.signup a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #008aff;
+    margin-left: 5px;
+}
+.store-img{
+    width: 350px;
+    padding: 15px;
+}
+
+.store-img img{
+    width: 28%;
+    height: auto;
+    cursor: pointer;
+}
+
+.store-img .playstore{
+    width: 7.4em;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+    main{
+        display:block;
+        justify-content: center;   
+        align-items: center;
+    }
+
+    .logo-img img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body{
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    
+}
+main{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img img{
+    display: none;
+}
+}
